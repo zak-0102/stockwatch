@@ -1,0 +1,44 @@
+{
+  "stock": [
+    {
+      "symbol": "360",
+      "name": "Life360, Inc.",
+      "currency": "AUD",
+      "exchange": "CXA",
+      "mic_code": "CXAC",
+      "country": "Australia",
+      "type": "Common Stock",
+      "id": 1
+    },
+    {
+      "symbol": "0A0N",
+      "name": "Amundi Index Solutions - Amundi Euro Corporates",
+      "currency": "EUR",
+      "exchange": "LSE",
+      "mic_code": "XLON",
+      "country": "United Kingdom",
+      "type": "Common Stock",
+      "id": 2
+    },
+    {
+      "symbol": "000028",
+      "name": "China National Accord Medicines Corporation Ltd.",
+      "currency": "CNY",
+      "exchange": "SZSE",
+      "mic_code": "XSHE",
+      "country": "China",
+      "type": "Common Stock",
+      "id": 3
+    },
+    {
+      "symbol": "3PLAND",
+      "name": "3P LAND HOLDINGS LTD.",
+      "currency": "INR",
+      "exchange": "BSE",
+      "mic_code": "XBOM",
+      "country": "India",
+      "type": "Common Stock",
+      "id": 4
+    }
+  ]
+}

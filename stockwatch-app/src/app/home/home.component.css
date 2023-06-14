@@ -1,0 +1,15 @@
+/*CSS for card having max height 250px, backround color grey, mnargin top as */
+
+.stock-card{
+    max-height: 250px;
+    background-color: #f5f5f5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.example-header-image{
+    background-image: url('../../assets/img.jpg');
+    background-size: cover;
+}

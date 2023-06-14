@@ -1,0 +1,38 @@
+<app-toolbar>   </app-toolbar>
+
+<!--div tag with flex as row to itterate the list of countries and display button for each country-->
+
+<div class= "country" fxLayout="row" fxLayoutAlign="space-around center">
+  <button mat-button *ngFor="let country of countries" (click)="getStocks(country)">{{country}}</button>
+</div>
+<!--div tag with flex as row to display the list of stockdetails as matcards-->
+    
+<div class="stock" fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <!--display only three cards per row-->
+<div *ngFor="let stock of stockDetails" fxFLex="60">
+    <mat-card class="stock-card">
+        <mat-card-header>
+            <!--div to display image in card header-->
+        <div mat-card-avatar class="example-header-image"></div>
+ 
+               <mat-card-title>{{stock.symbol}}</mat-card-title>
+          <mat-card-subtitle>{{stock.type}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+         Name: {{stock.name}}
+    <p>
+        Traded in {{stock.country}} with currency {{stock.currency}}
+    </p>
+    <p>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-button (click)="addWishlist(stock)">Add to Wishlist</button>
+          <button mat-button (click)="getStockTimeSeries(stock.symbol)">Time Series</button>
+        </mat-card-actions>
+      </mat-card>
+</div>
+
+</div>
+
+

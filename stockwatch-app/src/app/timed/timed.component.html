@@ -1,0 +1,22 @@
+<app-toolbar>
+</app-toolbar>
+
+<!--div tag with flex as row wrap to itterate over list of stockTimeSeries and display cards for each timeseries-->
+<div class="stock" fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <!--display only three cards per row-->
+    <div *ngFor="let stock of stockTimeSeries" fxFLex="60">
+        <mat-card class="stock-card">
+            <mat-card-header>
+                <mat-card-title>{{stockTimeSeries.datetime}}</mat-card-title>
+                <mat-card-subtitle>{{stockTimeSeries.volume}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <p> Open: {{stockTimeSeries.open}}</p>
+                <p> High: {{stockTimeSeries.high}}</p>
+                <p> Low: {{stockTimeSeries.low}}</p>
+                <p> Close: {{stockTimeSeries.close}}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+<div>
+  
